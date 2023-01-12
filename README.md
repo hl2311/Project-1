@@ -38,7 +38,7 @@ Dùng để chia dataset ban đầu thành 2 file training và testing với kí
 ##### Step 1: 
 Để khởi tạo model, chỉ cần nhập tên dataset muốn chia thành 2 tập training và testing mong muốn. t = TrainAndTestSplitting(filename)
 ##### Step 2:
-Để thực hiện chia thành 2 tập mong muốn, chúng ta chỉ cần chạy method trainAndTestSplitting(train_size, test_size, method) với những @param như sau:
+Để thực hiện chia thành 2 tập mong muốn, chúng ta chỉ cần chạy method: t.trainAndTestSplitting(train_size, test_size, method) với những @param như sau:
 + train_size: kích thước tập train trong toàn bộ dataset (0 < train_size < 1)
 + test_size: kích thước tập test trong toàn bộ dataset (0 < test_size < 1 và train_size + test_size = 1)
 + method: có 2 phương pháp chia dữ liệu chính đó là "random" (mặc định) và "stratified". Với "random" chúng ta sẽ chia tập dữ liệu ngẫu nhiên mà không quan tâm đến sự phân bố của nhãn trong tập training và testing. Với "stratified" chúng ta sẽ chia tập training và testing đảm bảo theo độ phân bố trong tập dataset ban đầu (Ví dụ: Nếu ban đầu có 2 lớp A chiếm 30% và B chiếm 70% trong tập dataset ban đầu thì khi chia tập training và testing thì phần trăm của từng lớp trong mỗi tập đều là 30% và 70%)
