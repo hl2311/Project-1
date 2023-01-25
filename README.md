@@ -1,4 +1,6 @@
 # Project-1
+## Chú ý
+Nếu muốn biết thêm chi tiết về các chức năng của thuật toán có thể sử dụng bản report(final_1.0).pdf
 ## Dataset
   Các dataset bao gồm:   
   
